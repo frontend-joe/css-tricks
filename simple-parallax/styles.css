@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: "Euclid Circular A";
+  color: #1d1d1d;
+  background: #071a20;
+}
+
+p,
+h2 {
+  position: relative;
+  z-index: 1;
+  margin: 20px 15%;
+}
+
+p {
+  opacity: 0.8;
+}
+
+section {
+  padding: 40px 0;
+}
+
+.image {
+  height: 380px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url("nike.png");
+}
+
+.text {
+  position: relative;
+}
+
+.text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 125%;
+  background: #ffffff;
+  rotate: -3deg;
+  translate: -50% -50%;
+}
